@@ -1,5 +1,5 @@
 function copy(text) {
-    var textArea = document.createElement('textarea');
+    let textArea = document.createElement('textarea');
     document.body.appendChild(textArea);
     textArea.value = String(text);
     textArea.select();
