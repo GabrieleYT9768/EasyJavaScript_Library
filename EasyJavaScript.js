@@ -39,17 +39,17 @@ function clock() {
     return hours + ':' + minutes + ':' + seconds;
 }
 
-// id() Function
-function id(i) {
+// docId() Function
+function docId(i) {
     return document.getElementById(String(i));
 }
 
-// tag() Function
-function tag(t, n) {
+// docTag() Function
+function docTag(t, n) {
     return document.getElementsByTag(String(t))[parseInt(n)];
 }
 
-// class() Function
-function class(c, n) {
+// docClass() Function
+function docClass(c, n) {
     return document.getElementsByClass(String(c))[parseInt(n)];
 }
