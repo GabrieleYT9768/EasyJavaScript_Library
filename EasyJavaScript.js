@@ -38,3 +38,18 @@ function clock() {
     }
     return hours + ':' + minutes + ':' + seconds;
 }
+
+// id() Function
+function id(id) {
+    return document.getElementById(String(id));
+}
+
+// tag() Function
+function tag(tag, n) {
+    return document.getElementsByTag(String(tag))[parseInt(n)];
+}
+
+// class() Function
+function class(class, n) {
+    return document.getElementsByClass(String(class))[parseInt(n)];
+}
