@@ -40,16 +40,16 @@ function clock() {
 }
 
 // id() Function
-function id(id) {
-    return document.getElementById(String(id));
+function id(i) {
+    return document.getElementById(String(i));
 }
 
 // tag() Function
-function tag(tag, n) {
-    return document.getElementsByTag(String(tag))[parseInt(n)];
+function tag(t, n) {
+    return document.getElementsByTag(String(t))[parseInt(n)];
 }
 
 // class() Function
-function class(class, n) {
-    return document.getElementsByClass(String(class))[parseInt(n)];
+function class(c, n) {
+    return document.getElementsByClass(String(c))[parseInt(n)];
 }
