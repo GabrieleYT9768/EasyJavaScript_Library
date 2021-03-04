@@ -17,26 +17,26 @@ function copy(text) {
 }
 
 // random() Function
-function random(number) {
-    return Math.round( Math.random() * number );
+function random(n) {
+    return Math.round( Math.random() * parseInt(n) );
 }
 
 // clock() Function
 function clock() {
     let date = new Date();
-    let hours = String(date.getHours());
-    if (hours.length == 1) {
-        hours = '0' + hours;
+    let h = String(date.getHours());
+    if (h.length == 1) {
+        h = '0' + h;
     }
-    let minutes = String(date.getMinutes());
-    if (minutes.length == 1) {
-        minutes = '0' + minutes;
+    let m = String(date.getMinutes());
+    if (m.length == 1) {
+        m = '0' + m;
     }
-    let seconds = String(date.getSeconds());
-    if (seconds.length == 1) {
-        seconds = '0' + seconds;
+    let s = String(date.getSeconds());
+    if (s.length == 1) {
+        s = '0' + s;
     }
-    return hours + ':' + minutes + ':' + seconds;
+    return h + ':' + m + ':' + s;
 }
 
 // docId() Function
