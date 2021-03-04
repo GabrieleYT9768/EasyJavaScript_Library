@@ -46,10 +46,10 @@ function docId(i) {
 
 // docTag() Function
 function docTag(t, n) {
-    return document.getElementsByTag(String(t))[parseInt(n)];
+    return document.getElementsByTagName(String(t))[parseInt(n)];
 }
 
 // docClass() Function
 function docClass(c, n) {
-    return document.getElementsByClass(String(c))[parseInt(n)];
+    return document.getElementsByClassName(String(c))[parseInt(n)];
 }
