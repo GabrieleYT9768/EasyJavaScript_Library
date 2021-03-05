@@ -53,3 +53,33 @@ function docTag(t, n) {
 function docClass(c, n) {
     return document.getElementsByClassName(String(c))[parseInt(n)];
 }
+
+// blockById() Function
+function blockById(i) {
+    return docId(String(i)).style.display = 'block';
+}
+
+// noneById() Function
+function noneById(i) {
+    return docId(String(i)).style.display = 'none';
+}
+
+// blockByTag() Function
+function blockByTag(i, n) {
+    return docTag(String(i), parseInt(n)).style.display = 'block';
+}
+
+// noneByTag() Function
+function noneByTag(i, n) {
+    return docTag(String(i), parseInt(n)).style.display = 'none';
+}
+
+// blockByClass() Function
+function blockByClass(i, n) {
+    return docClass(String(i), parseInt(n)).style.display = 'block';
+}
+
+// noneByClass() Function
+function noneByClass(i, n) {
+    return docClass(String(i), parseInt(n)).style.display = 'none';
+}
