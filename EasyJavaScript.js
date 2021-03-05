@@ -83,3 +83,8 @@ function blockByClass(i, n) {
 function noneByClass(i, n) {
     return docClass(String(i), parseInt(n)).style.display = 'none';
 }
+
+// randomColor() Function
+function randomColor() {
+    return 'rgb(' + random(255) + ', ' + random(255) + ', ' + random(255) + ')';
+}
