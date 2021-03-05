@@ -6,6 +6,19 @@ This code is Copyright ©
 
 */
 
+// Library Var
+var library = {
+    name: 'EasyJavaScript',
+    description: 'This Library was made to make JavaScript easier to use',
+    creator: 'GabrieleYT9768',
+    repository: 'https://github.com/GabrieleYT9768/EasyJavaScript_Library/blob/main',
+    source: 'https://raw.githack.com/GabrieleYT9768/EasyJavaScript_Library/main/EasyJavaScript.js',
+    functions: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()'],
+    resum: function() {
+        return 'Library:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nfunctions:\n\n' + this.functions.join('\n')
+    }
+}
+
 // copy() Function
 function copy(text) {
     let textArea = document.createElement('textarea');
