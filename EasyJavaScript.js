@@ -101,3 +101,18 @@ function noneByClass(i, n) {
 function randomColor() {
     return 'rgb(' + random(255) + ', ' + random(255) + ', ' + random(255) + ')';
 }
+
+//  date() Function
+function date() {
+    let date = new Date();
+    let d = String(date.getDays());
+    if (d.length == 1) {
+        d = '0' + d;
+    }
+    let m = String(date.getMonths());
+    if (m.length == 1) {
+        m = '0' + m;
+    }
+    let y = String(date.getYears());
+    return d + '/' + m + '/' + y;
+}
