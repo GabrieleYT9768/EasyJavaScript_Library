@@ -105,14 +105,14 @@ function randomColor() {
 //  date() Function
 function date() {
     let date = new Date();
-    let d = String(date.getDays());
+    let d = String(date.getDate());
     if (d.length == 1) {
         d = '0' + d;
     }
-    let m = String(date.getMonths());
+    let m = String(date.getMonth());
     if (m.length == 1) {
         m = '0' + m;
     }
-    let y = String(date.getYears());
+    let y = String(date.getFullYear());
     return d + '/' + m + '/' + y;
 }
