@@ -13,14 +13,19 @@ var library = {
 	creator: 'GabrieleYT9768',
 	repository: 'https://github.com/GabrieleYT9768/EasyJavaScript_Library/blob/main',
 	source: 'https://raw.githack.com/GabrieleYT9768/EasyJavaScript_Library/main/EasyJavaScript.js',
-	functions: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()', 'colorById()', 'colorByTag()', 'colorByClass()'],
+	functionsArray: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()', 'colorById()', 'colorByTag()', 'colorByClass()'],
 	resum: function() {
-		alert('Library:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nfunctions:\n\n' + this.functions.join('\n'))
+		alert('To disable this alert, change the ejsAlert variable to false.\nWARNING it has already been declared.\n\nLibrary:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nFor the functions list use the library.functions() function.');
+	},
+	functions: function() {
+		alert(this.functionsArray.join('\n'));
 	}
 }
 
+var ejsAlert;
+
 // Library Alert
-if (!ejsNoAlert) {
+if (ejsAlert !== false) {
 	library.resum();
 }
 
