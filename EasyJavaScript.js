@@ -22,6 +22,7 @@ var library = {
 	}
 }
 
+// Alert Var
 var ejsAlert;
 
 // Library Alert
