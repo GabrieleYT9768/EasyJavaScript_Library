@@ -15,7 +15,7 @@ var library = {
 	source: 'https://raw.githack.com/GabrieleYT9768/EasyJavaScript_Library/main/EasyJavaScript.js',
 	functionsArray: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()', 'colorById()', 'colorByTag()', 'colorByClass()'],
 	resum: function() {
-		alert('To disable this alert, change the ejsAlert variable to false.\nWARNING it has already been declared.\n\nLibrary:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nFor the functions list use the library.functions() function.');
+		alert('Library:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nFor the functions list use the library.functions() function.');
 	},
 	functions: function() {
 		alert(this.functionsArray.join('\n'));
