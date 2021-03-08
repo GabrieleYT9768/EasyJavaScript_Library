@@ -22,14 +22,6 @@ var library = {
 	}
 }
 
-// Alert Var
-var ejsAlert;
-
-// Library Alert
-if (ejsAlert !== false) {
-	library.resum();
-}
-
 // copy() Function
 function copy(text) {
 	let textArea = document.createElement('textarea');
