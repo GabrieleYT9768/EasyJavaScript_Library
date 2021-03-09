@@ -141,3 +141,18 @@ function colorByTag(t, n, color) {
 function colorByClass(c, n, color) {
 	docClass(c, n).style.color = String(color);
 }
+
+// bgColorById() Function
+function bgColorById(i, color) {
+	docId(i).style.backgroungColor = String(color);
+}
+
+// bgColorByTag() Function
+function bgColorByTag(t, n, color) {
+	docTag(t, n).style.backgroundColor = String(color);
+}
+
+// bgColorByClass() Function
+function bgColorByClass(c, n, color) {
+	docClass(c, n).style.backgroundColor = String(color);
+}
