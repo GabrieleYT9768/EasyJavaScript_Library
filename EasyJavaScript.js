@@ -13,12 +13,12 @@ var library = {
 	creator: 'GabrieleYT9768',
 	repository: 'https://github.com/GabrieleYT9768/EasyJavaScript_Library/blob/main',
 	source: 'https://raw.githack.com/GabrieleYT9768/EasyJavaScript_Library/main/EasyJavaScript.js',
-	functionsArray: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()', 'randomColor()', 'time()', 'colorById()', 'colorByTag()', 'colorByClass()', 'bgColorById()', 'bgColorByTag()', 'bgColorByClass()'],
+	functionsArray: ['copy()', 'random()', 'clock()', 'docId()', 'docTag()', 'docClass()', 'blockById()', 'noneById()', 'blockByTag()', 'noneByTag()', 'blockByClass()', 'noneByClass()', 'randomColor()', 'time()', 'colorById()', 'colorByTag()', 'colorByClass()', 'bgColorById()', 'bgColorByTag()', 'bgColorByClass()', 'fontById()', 'fontByClass()', 'fontByTag'],
 	resum: function() {
 		alert('Library:\n\n\nname: ' + this.name + '\n\ndescription: ' + this.description + '\n\nrepository: ' + this.repository + '\n\nsource: ' + this.source + '\n\n\nFor the functions list use the library.functions() function.');
 	},
 	functions: function() {
-		alert(this.functionsArray.join('\n'));
+		return this.functionsArray.join('\n');
 	}
 }
 
