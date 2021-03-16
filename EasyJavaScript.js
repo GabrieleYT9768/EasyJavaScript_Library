@@ -149,3 +149,18 @@ function bgColorByTag(t, n, color) {
 function bgColorByClass(c, n, color) {
 	docClass(c, n).style.backgroundColor = String(color);
 }
+
+// fontById() Function
+function fontById(i, f) {
+	docId(i).style.fontFamily = String(f);
+}
+
+// fontByClass() Function
+function fontByClass(c, n, f) {
+	docClass(c, n).style.fontFamily = String(f);
+}
+
+// fontByTag() Function
+function fontByTag(t, n, f) {
+	docTag(t, n).style.fontFamily = String(f);
+}
