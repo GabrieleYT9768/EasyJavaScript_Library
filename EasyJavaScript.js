@@ -22,6 +22,8 @@ var library = {
 	}
 }
 
+var easyJavaScriptLibrary_songs = [];
+
 // copy() Function
 function copy(text) {
 	let textArea = document.createElement('textarea');
@@ -163,4 +165,9 @@ function fontByClass(c, n, f) {
 // fontByTag() Function
 function fontByTag(t, n, f) {
 	docTag(t, n).style.fontFamily = String(f);
+}
+
+// musicPlay() Function
+function musicPlay(sN, sL) {
+	//let s = 'songName_' + Math.random().toString(36).replace(/[^a-z]+/g, '');
 }
